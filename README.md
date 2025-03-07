@@ -1,4 +1,7 @@
 # EventHorizon
+
+(This is a project from the Spring 2024 semester, done by Vikrant Gurav, Lianna Lariccia, Arian Hadzibrahimi and Kate Choi as part of the CS 546 course.)
+
 As Hoboken residents, we live in a single square mile city that is packed with residents and activities. However, it may be challenging for those who are busy with their day to day work to find time to keep up with Hoboken’s culture and community, and there are often events that fly under our radar. Our application provides its users a platform where they can browse, create, and manage events seamlessly in one area in hopes of allowing any user to integrate themselves or their organization with the city.
 
 These are the steps you are to run this:
