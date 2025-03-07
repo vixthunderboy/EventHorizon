@@ -1,0 +1,31 @@
+
+<h1 id="eventName">{{eventName}}</h1>
+<main>
+    <h2 id="eventTime">{{eventTime}}</h2>
+    <h2 id="eventLocation">{{eventLocation}}</h2>
+    <p  id="eventDescription">{{eventDescription}}</p>
+
+    <div id="comments">
+        <h3>Comments:</h3>
+        <div id="comment"></div>
+    </div>
+
+     <form id="comment-form" action="/create-comment" method="post">
+        <label for="confirmPassword">Add comment:</label>
+            <input type="text" id="newComment" name="newComment" placeholder="Start typing...">
+            <button
+                id="submitButton"
+                type="submit"
+                name="submitButton"
+            >Submit</button>
+     </form>
+     <form action="/bookmark" method="POST">
+     <input type="hidden" name="eventId" value="{{eventId}}">
+     <button type="submit" id="bookmarkEvent">Bookmark Event</button>
+
+</main>
+
+<script>
+    var comment = document.getElementById("newComment").textContent
+</script>
+

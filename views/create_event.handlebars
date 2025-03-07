@@ -1,0 +1,41 @@
+
+
+    <h1>Create a New Event</h1>
+    <form id="create-event-form" action="/create-event" method="POST">
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" required placeholder="Enter the event name">
+
+        <label for="eventDescription">Event Description:</label>
+        <input type="text" id="eventDescription" name="eventDescription" required placeholder="Enter the event description">
+
+    <label for="eventDate">Date:</label>
+        <input type="date" id="eventDate" name="eventDate">
+        
+        <label for="eventLocation">Location:</label>
+        <input type="text" id="eventLocation" name="eventLocation" required placeholder="Enter location">
+
+        <label for="category">Select Category:</label>
+        <div id="category">
+            <input type="checkbox" id="category-sports" name="category[]" value="sports">
+            <label for="category-sports">Sports</label><br>
+            
+            <input type="checkbox" id="category-art" name="category[]" value="art">
+            <label for="category-art">Art</label><br>
+
+            <input type="checkbox" id="category-theater" name="category[]" value="theater">
+            <label for="category-theater">Theater</label><br>
+
+            <input type="checkbox" id="category-music" name="category[]" value="music">
+            <label for="category-music">Music</label><br>
+
+            <input type="checkbox" id="category-conventions" name="category[]" value="conventions">
+            <label for="category-convention">Conventions</label><br>
+            
+            <input type="checkbox" id="category-technology" name="category[]" value="technology">
+            <label for="category-technology">Technology</label><br>
+        </div>
+
+        <button id="submitButton" type="submit" name="submitButton">Submit</button>
+    </form>
+    <script src="/public/js/dateDropdown.js"></script>
+

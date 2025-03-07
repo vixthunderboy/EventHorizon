@@ -1,0 +1,16 @@
+
+    <h1>Report an Event</h1>
+    <form id="report-form" action="/report" method="POST">
+        <label for="reason">Reason for reporting:</label>
+            <select name="reason" id="reason">
+                <option value="hate">Hate group or contains hate speech</option>
+                <option value="violence">Organizing or promoting violence</option>
+                <option value="discriminatory">Discriminatory</option>
+                <option value="sexually_explicit">Sexually explicit content</option>
+                <option value="illegal">Illegal goods or services</option>
+                <option value="other">Other (Explain below)</option>
+            </select>
+        <label for="additionalInfo">Please provide additional information.</label>
+        <input type="text"  id="additionalInfo" name="additionalInfo">
+        <button id="submitButton" type="submit" name="submitButton">Report Event</button>
+    </form>

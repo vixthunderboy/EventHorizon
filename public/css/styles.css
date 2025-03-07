@@ -1,0 +1,123 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header, footer {
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #bbbbbb;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 auto; /* Center align the navbv */
+    display: flex;
+    justify-content: center; /* Center nav items when not full width */
+    flex-wrap: wrap; 
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+    
+}
+
+main {
+    padding: 20px;
+    min-height: 80vh; /* Adjust the minimum height as needed */
+    margin: auto; /* Centers main content horizontally */
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    background-color: #333;
+    color: #ddd;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* width: calc(100% - 22px); Adjust width as needed, considering padding and border */
+}
+
+button {
+    background-color: #0a84ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Make the button a block element */
+    margin: 20px auto; 
+}
+
+button:hover {
+    background-color: #0060df;
+}
+
+form {
+    width: 100%; /* Responsive width */
+    max-width: 300px; /* Maximum width of the form */
+    margin: auto; /* Center the form horizontally in the page */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Additional styling for specific elements or states */
+input:focus, button:focus {
+    outline: none;
+    border-color: #0a84ff;
+    box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    button, input[type="text"], input[type="password"] {
+        width: 100%;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+#calendar-container {
+    width: 80%;
+    margin: 0 auto;
+}
+#calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+#calendar th, #calendar td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+#calendar th {
+    background-color: #6a1b9a;
+    color: #fff;
+}

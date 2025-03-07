@@ -1,0 +1,21 @@
+<h1>Search for an event</h1>
+    <form id="search" action="/search" method="POST">
+
+        <input type="text" id="terms" name="terms" placeholder="Search...">
+
+        <button id="submitButton" type="submit" name="submitButton">Submit</button>
+
+    <ol>
+
+    {{#each searchList}}
+
+    <a href="/event/{{id}}">{{eventName}}</a>
+    <p>{{eventDate}}</p>
+    <p>{{eventDescription}} </p>
+
+    {{/each}}
+
+    </ol>
+
+    </form>
+    <script src="/public/js/dateDropdown.js"></script>

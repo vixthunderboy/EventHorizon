@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Event Horizon - {{event}} </title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <header>
+        {{#if loggedIn}}
+            {{> navbar}} <!-- Navigation bar partial -->
+        {{/if}}
+    </header>
+
+    <main>
+        <div id="content">
+            {{{body}}}
+            {{#if error}}
+                {{> error}}
+            {{/if}}  
+
+        </div>
+  
+
+    </main>
+    <script type="module" src="../../public/js/client_side_validation.js"></script>
+    <footer></footer>
+</body>
+</html>
+
